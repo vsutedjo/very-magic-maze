@@ -4,7 +4,10 @@ ThemeData veryMagicMazeTheme = ThemeData(
   primarySwatch: magicMazeBlue,
   scaffoldBackgroundColor: Color.fromRGBO(23, 23, 23, 1),
   textTheme: TextTheme(
-      headline1: TextStyle(color: Colors.white, fontSize: 45), button: TextStyle(color: Colors.white, fontSize: 20)),
+    headline1: TextStyle(color: Colors.white, fontSize: 45),
+    button: TextStyle(color: Colors.white, fontSize: 20),
+    caption: TextStyle(color: Colors.white70, fontSize: 15),
+  ),
 );
 
 MaterialColor magicMazeBlue = MaterialColor(Color.fromRGBO(63, 173, 235, 1).value, {

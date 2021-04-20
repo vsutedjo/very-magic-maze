@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:very_magic_maze/screens/start_screen/start_screen.dart';
+import 'package:very_magic_maze/screens/start_screen/shared/create_screen.dart';
 import 'package:very_magic_maze/shared/theme.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Very Magic Maze',
       theme: veryMagicMazeTheme,
-      home: StartScreen(),
+      home: CreateScreen(),
     );
   }
 }

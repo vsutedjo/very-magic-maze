@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:very_magic_maze/shared/theme.dart';
 
-class StartScreen extends StatelessWidget {
+abstract class StartScreen extends StatelessWidget {
+  Widget actionWidget(BuildContext context);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,18 +37,13 @@ class StartScreen extends StatelessWidget {
           alignment: Alignment.center,
           padding: EdgeInsets.only(
               top: MediaQuery.of(context).size.height * 0.1, bottom: MediaQuery.of(context).size.height * 0.05),
-          child: Text("Welcome to the Very Magic Maze!", style: Theme.of(context).textTheme.headline1),
-        ),
-        TextButton(
-          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(magicMazeBlue)),
-          onPressed: () {
-            print("Create game pressed.");
-          },
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-            child: Text("Create game", style: Theme.of(context).textTheme.button),
+          child: Text(
+            "Welcome to the Very Magic Maze!",
+            style: Theme.of(context).textTheme.headline1,
+            textAlign: TextAlign.center,
           ),
         ),
+        actionWidget(context),
       ],
     ));
   }
