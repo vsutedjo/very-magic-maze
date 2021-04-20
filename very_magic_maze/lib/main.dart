@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:very_magic_maze/screens/start_screen/shared/create_screen.dart';
 import 'package:very_magic_maze/shared/theme.dart';
+
+import 'file:///D:/Misceallneous/Sonstiges/very-magic-maze/very_magic_maze/lib/screens/start_screen/create_screen.dart';
 
 void main() {
   runApp(MyApp());

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:very_magic_maze/shared/theme.dart';
 
-import '../start_screen.dart';
 import 'join_screen.dart';
+import 'shared/start_screen.dart';
 
 class CreateScreen extends StartScreen {
   @override

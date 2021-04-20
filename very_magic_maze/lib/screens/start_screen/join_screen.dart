@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:very_magic_maze/screens/game/game_screen.dart';
 import 'package:very_magic_maze/shared/theme.dart';
 
-import '../start_screen.dart';
+import 'shared/start_screen.dart';
 
 class JoinScreen extends StartScreen {
   final TextEditingController controller = TextEditingController();
@@ -29,6 +30,11 @@ class JoinScreen extends StartScreen {
               style: ButtonStyle(backgroundColor: MaterialStateProperty.all(magicMazeBlue)),
               onPressed: () {
                 //TODO /api/$gameId/join-game
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => GameScreen(),
+                  ),
+                );
               },
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
