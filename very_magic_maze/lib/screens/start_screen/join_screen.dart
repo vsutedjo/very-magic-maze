@@ -21,7 +21,7 @@ class JoinScreen extends StartScreen {
                   fillColor: magicMazeGrey,
                   filled: true,
                   hintText: "Nickname",
-                  hintStyle: Theme.of(context).textTheme.button.copyWith(color: Colors.white70),
+                  hintStyle: Theme.of(context).textTheme.button!.copyWith(color: Colors.white70),
                   border: OutlineInputBorder(borderRadius: BorderRadius.circular(10), gapPadding: 0),
                 ),
               ),
